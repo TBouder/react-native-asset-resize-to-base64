@@ -1,6 +1,6 @@
 {
   "name": "react-native-asset-resize-to-base64",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "React Native Package to transform an asset image to a base64 string with a possibility to resize it",
   "main": "index.js",
   "scripts": {
