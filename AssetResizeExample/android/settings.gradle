@@ -1,0 +1,5 @@
+rootProject.name = 'AssetResizeExample'
+include ':react-native-asset-resize-to-base64'
+project(':react-native-asset-resize-to-base64').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-asset-resize-to-base64/android')
+
+include ':app'
