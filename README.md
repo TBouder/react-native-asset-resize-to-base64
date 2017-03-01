@@ -1,11 +1,11 @@
 # react-native-asset-resize-to-base64
 This react-native module allows you to get an asset image with CameraRoll (returns an url like this : "assets-library://asset/asset.JPG?id=ED7AC36B-A150-4C38-BB8C-B6D696F4F2ED&ext=JPG"), to resize and transform it to base64 string with NativeModules.RNAssetResizeToBase64.assetToResizedBase64 and then, to upload it with fetch. You can find an example to test it.
 
-The function takes 3 arguments:
+The function takes 3 arguments:   
 1. The assetUrl
 2. The new width
 3. The new Height
-The function return 1 callback with 2 arguments:
+The function return 1 callback with 2 arguments:   
 1. err for errors
 2. base64, the base64 string of the resized image
 
