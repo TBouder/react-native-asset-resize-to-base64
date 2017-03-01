@@ -47,13 +47,11 @@ import RNAssetResizeToBase64.RNAssetResizeToBase64Package;
 	}
 ```
 
-##Example from scratch
+##Example from scratch with access to the user gallery
 1. react-native init example
 2. cd example
 3. npm i react-native-asset-resize-to-base64 --save
 4. react-native link react-native-asset-resize-to-base64
-
-(optionnal to get the gallery working)
 5. add <You_app>/node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj to your project (in Xcode, <Your_app> in Libraries)
 7. add libRCTCameraRoll.a (Xcode > Libraries > RCTCameraRoll.xcodeproj > Products > libRCTCameraRoll.a) to your project's Build Phases under "Link Binary With Libraries"
 6. add, in Info.plist, the NSPhotoLibraryUsageDescription key with a string (why do you want to access the user gallery)
