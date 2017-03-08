@@ -5,14 +5,15 @@ The function takes 3 arguments:
 1. The assetUrl  
 2. The new width  
 3. The new Height  
+
 The function return 1 callback with 2 arguments:   
 1. err for errors  
 2. base64, the base64 string of the resized image  
 
 ##Installation (auto)
-1. npm i react-native-asset-resize-to-base64 --save
-2. react-native link react-native-asset-resize-to-base64
-3. Import in your file
+1. npm i react-native-asset-resize-to-base64 --save.  
+2. react-native link react-native-asset-resize-to-base64   
+3. Import in your file   
 ```
 import NativeModules from 'NativeModules'
 ```
@@ -53,5 +54,5 @@ import RNAssetResizeToBase64.RNAssetResizeToBase64Package;
 3. npm i react-native-asset-resize-to-base64 --save
 4. react-native link react-native-asset-resize-to-base64
 5. add <You_app>/node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj to your project (in Xcode, <Your_app> in Libraries)
-7. add libRCTCameraRoll.a (Xcode > Libraries > RCTCameraRoll.xcodeproj > Products > libRCTCameraRoll.a) to your project's Build Phases under "Link Binary With Libraries"
-6. add, in Info.plist, the NSPhotoLibraryUsageDescription key with a string (why do you want to access the user gallery)
+6. add libRCTCameraRoll.a (Xcode > Libraries > RCTCameraRoll.xcodeproj > Products > libRCTCameraRoll.a) to your project's Build Phases under "Link Binary With Libraries"
+7. add, in Info.plist, the NSPhotoLibraryUsageDescription key with a string (why do you want to access the user gallery)
