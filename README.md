@@ -10,7 +10,7 @@ The function return 1 callback with 2 arguments:
 1. err for errors  
 2. base64, the base64 string of the resized image  
 
-##Installation (auto)
+### Installation (auto)
 1. npm i react-native-asset-resize-to-base64 --save.  
 2. react-native link react-native-asset-resize-to-base64   
 3. Import in your file   
@@ -22,13 +22,13 @@ import NativeModules from 'NativeModules'
 NativeModules.RNAssetResizeToBase64.assetToResizedBase64(url, 500, 500, (err, base64) => console.log(base64))
 ```
 
-###IOS (manual)
+### IOS (manual)
 - Open XCode
 - In the XCode's "Project navigator", right click on your project's Libraries folder ➜ Add Files to <...>
 - Go to node_modules/react-native-asset-resize-to-base64/ios/ and add RNAssetResizeToBase64.xcodeproj
 - In the XCode's "Project navigator", select click on your project's name and add libRNAssetResizeToBase64.a under 'Link Binary with Libraries' in your project's 'Build Phases'
 
-###ANDROID (manual)
+### ANDROID (manual)
 - In <Your Project>/android/settings.gradle, add this :
 ```
 include ':react-native-asset-resize-to-base64'
@@ -48,7 +48,7 @@ import RNAssetResizeToBase64.RNAssetResizeToBase64Package;
 	}
 ```
 
-##Example from scratch with access to the user gallery
+### Example from scratch with access to the user gallery
 1. react-native init example
 2. cd example
 3. npm i react-native-asset-resize-to-base64 --save
