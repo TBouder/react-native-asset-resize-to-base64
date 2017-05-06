@@ -15,7 +15,7 @@ The function return 1 callback with 2 arguments:
 2. react-native link react-native-asset-resize-to-base64   
 3. Import in your file   
 ```
-import NativeModules from 'NativeModules'
+import {NativeModules} from 'react-native';
 ```
 4. Use it
 ```
