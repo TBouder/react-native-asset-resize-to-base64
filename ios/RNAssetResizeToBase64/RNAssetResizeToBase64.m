@@ -16,18 +16,23 @@ RCT_EXPORT_METHOD(	assetToResizedBase64:(NSString *)imageUrl
     CGSize newSize								= CGSizeMake(width, height);
 	NSURL *url									= [[NSURL alloc] initWithString:imageUrl];
 	ALAssetsLibrary *library					= [[ALAssetsLibrary alloc] init];
+	
+	NSLog(@"FIRSSSST");
 
 	[library assetForURL:url resultBlock:^(ALAsset *asset)
 	{
+		NSLog(@"SECOND");
 		/*Get the image Representation*/
 		ALAssetRepresentation *representation	= [asset defaultRepresentation];
 		CGImageRef imageRef						= [representation fullScreenImage];
 
+		NSLog(@"THIRD");
 		/*Get the image data and scale it according to Width and Height*/
 		NSData *imagePngRep						= UIImagePNGRepresentation([UIImage imageWithCGImage:imageRef]);
 		UIImage *imageUI						= [UIImage imageWithData:imagePngRep];
 		UIImage *scaledImage					= [imageUI scaleToSize:newSize];
 
+		NSLog(@"FOURTH");
 		/*Et the newImageData and transform it to base64*/
 		NSData *ImageData						= UIImagePNGRepresentation(scaledImage);
 		NSString *base64Encoded					= [ImageData base64EncodedStringWithOptions:0];
